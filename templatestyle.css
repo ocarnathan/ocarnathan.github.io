@@ -1,3 +1,18 @@
+p {
+    margin: 0;
+}
+
+/* h2 {
+    margin: 0;
+} */
+
+#features-header {
+    margin: 0;
+    padding-top: 20px;
+}
+
+
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -11,6 +26,7 @@ body {
 
 main {
     background-color: #000000;
+    
 }
 
 
@@ -49,18 +65,29 @@ video {
     height: auto;
     z-index: -100; /* Place the video behind other elements */
     object-fit: cover;
+    max-width: 100%;  /* Set the maximum width to 100% of its container */
+    display: block;  /* Ensure the video behaves as a block element */
+    margin: 0 auto;  /* Center the video horizontally within its container */
+}
 
-
+main{
+    overflow: hidden; /* allows the background of other elements to cover the video */
 }
 
 #button-row-main {
-    margin-top: -220px;
+    /* padding-bottom: 10px; */
+    margin-top: -140px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     z-index: 2; /* Ensure the button row is visually above the video */
-    background-color: rgba(215, 37, 37, 0.3); /* Semi-transparent white background */
-    /* z-index: 2; */
+    background-color: rgba(11, 0, 0, 0.3); /* Semi-transparent white background */
+
+
+}
+#home-message, #home-button {
+    margin-top: -20px;
+    margin-bottom: 20px;
 }
 
 #home-message {
@@ -159,11 +186,15 @@ nav ul li a::after {
 }
 
 .features {
-    padding: 40px;
+    /* padding: 40px;
+    margin-top: 200px; */
     color: rgb(255, 255, 255);
     background-color: #000000;
 }
 
+#black {
+    color:hsl(0, 66%, 49%);
+}
 
 .features h2 {
     text-align: center;
