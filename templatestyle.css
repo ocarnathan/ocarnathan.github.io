@@ -140,3 +140,54 @@ footer {
     background-color: #333;
     color: #fff;
 }
+
+/* ----------------------- About Page ---------------------- */
+#about-body {
+    background-color: #080000;
+}
+
+#about {
+    padding: 80px 0;
+    color: #fff;
+}
+
+.row {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    margin-left: 100px;
+    flex-basis: 45%;
+}
+
+.about-col-2 img {
+
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 35%;
+    margin-right: 100px;
+}
+
+.sub-title {
+    margin-top: 100px;
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+    font-family: Papyrus;
+}
+
+.bio {
+    margin-top: 100px;
+    font-size: 25px;
+    color: #fff;
+    font-family: Papyrus;
+}
+
+span {
+    color: #ff0000;
+}
