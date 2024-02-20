@@ -94,6 +94,23 @@ nav ul li a::after {
     /* width of line */
   }
 
+
+  #video-caption {
+    color:#fff;
+    font-family: Verdana, sans-serif;
+  }
+
+  #youtube {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black; /* Set your background color */
+    color: red; /* Set your text color */
+    padding: 20px;
+    margin-top: 50px; /* Adjust as needed */
+}
 #cart {
     margin-left: 80px;
 }
