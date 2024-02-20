@@ -176,9 +176,9 @@ footer {
 .sub-title {
     margin-top: 100px;
     font-size: 50px;
-    font-weight: 600;
+    font-weight: 100;
     color: #fff;
-    font-family: Papyrus;
+    font-family: Verdana, sans-serif;
 }
 
 .bio {
@@ -191,3 +191,8 @@ footer {
 span {
     color: #ff0000;
 }
+
+
+
+
+/* ---------------css for small screens---------- */
