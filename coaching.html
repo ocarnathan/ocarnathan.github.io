@@ -5,6 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Coming Soon - Coaching Page</title>
+        <script src="https://kit.fontawesome.com/2b68d2ab24.js"
+            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <link rel="stylesheet" href="templatestyle.css">
         <style>
         body {
             background-color: black;
@@ -20,6 +24,17 @@
     </style>
     </head>
     <body>
+        <main>
+            <header>
+                <div id="navbar-container"></div>
+                <script>
+            // Load navbar dynamically using jQuery
+            $(function(){
+                $('#navbar-container').load('navbar.html');
+            });
+        </script>
+            </header>
+        </main>
         <h1>Coming Soon - Coaching Page</h1>
     </body>
 </html>
