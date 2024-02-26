@@ -66,8 +66,8 @@ header {
     top: 0; /* Stay on top */
     width: 100%; /* Full width */
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    font-size: 20px;
   }
-
 
 video {
     /* position: fixed; */
@@ -77,12 +77,17 @@ video {
     min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -100; /* Place the video behind other elements */
+    z-index: -100; 
+    /* Place the video behind other elements */
     object-fit: cover;
-    max-width: 100%;  /* Set the maximum width to 100% of its container */
-    display: block;  /* Ensure the video behaves as a block element */
-    margin: 0 auto;  /* Center the video horizontally within its container */
+    max-width: 100%;  
+    /* Set the maximum width to 100% of its container */
+    display: block;  
+    /* Ensure the video behaves as a block element */
+    margin: 0 auto;  
+    /* Center the video horizontally within its container */
 }
+
 
 main{
     overflow: hidden; /* allows the background of other elements to cover the video */
@@ -96,6 +101,9 @@ main{
     flex-wrap: wrap;
     z-index: 2; /* Ensure the button row is visually above the video */
     background-color: rgba(11, 0, 0, 0.3); /* Semi-transparent white background */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
 
 }
@@ -202,7 +210,7 @@ nav ul li a::after {
 /* -------------------------features section----------------------------- */
 
 .features {
-    padding: 100px;
+    padding: 175px;
     /* margin-top: 200px; */
     color: rgb(255, 255, 255);
     background: #000000;
@@ -211,6 +219,7 @@ nav ul li a::after {
 
 .features h1 {
     font-size: 50px;
+    margin: 0;
 }
 
 .features h1 span{
