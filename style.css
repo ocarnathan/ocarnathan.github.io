@@ -144,7 +144,7 @@ nav ul li a:hover::after {
 }
 
 /* -----------------------------about----------------------- */
-.about-section {
+#about-section {
   background: rgb(0, 0, 0);
   /* display: flex;
   width: 100vw; */
