@@ -143,8 +143,55 @@ nav ul li a:hover::after {
   color: inherit;
 }
 
+/* -----------------------------about----------------------- */
+.about-section {
+  background: rgb(0, 0, 0);
+  /* display: flex;
+  width: 100vw; */
+}
+
+.about-container {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* flex-wrap: wrap; */
+  /* width: 100vw; */
+}
 
 
+span {
+  color: #ff0000;
+}
+
+.about-col-1 {
+  color:#fff;
+  max-width: 50%;
+  flex-basis: 65%;
+  /* background: #ff0000; */
+  font-size: 150%;
+  font-weight: 700;
+}
+
+.about-col-1 h1 {
+  padding-bottom: 50px;
+  font-size: 200%;
+}
+
+.about-col-1 p {
+ max-width: 90%;
+}
+
+.about-col-2 {
+  max-width: 50%;
+  flex-basis: 35%;
+}
+
+.about-col-2 img {
+  border-radius: 25px;
+  max-width: 100%;
+}
 
 /* -----------------------------features----------------------- */
 .features, .cta, .foot {
