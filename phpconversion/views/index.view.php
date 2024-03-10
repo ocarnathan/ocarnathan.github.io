@@ -1,12 +1,13 @@
 <?php require "partials/head.php"; ?>
-<?php require "partials/nav.php"; ?>
 
 <body>
     <!-- ------------------------main section------------------------- -->
     <main id="main-section" class="main-page">
         <!-- -------------------------------header-------------------------------- -->
         <header>
-            <div id="navbar-container"></div>
+            <div id="navbar-container">
+                <?php require "partials/nav.php"; ?>
+            </div>
         </header>
         <div class="video-container">
             <video autoplay muted loop>
@@ -68,34 +69,35 @@
     <!-- ----------------------- features ------------------------- -->
     <section id="features" class="features">
         <!-- <p>hey</p> -->
-
-        <h1 class="mission"><span>My mission?</span></h1>
-        <h5 class="mission-statement">
-            To guide individuals of all genders on their journey
-            to sculpt lean muscle, torch stubborn fat, and enhance overall
-            functionality.</h5>
-        <!-- <h2 class="features-header">Key Features</h2> -->
-        <ul>
-            <!-- <li>Comprehensive Workout Plan</li> -->
-            <!-- The program offers an 8-week strength training plan that incorporates principles of hypertrophy and progressive overload.
-                It follows a 4-day split, targeting specific muscle groups on each training day.
-                The workouts aim to burn body fat while increasing lean muscle mass. -->
-            <!-- <li>Balanced Approach</li> -->
-            <!-- The program strikes a balance between strength training and cardiovascular exercises.
-                Strength training is highlighted as the cornerstone for muscle development, while cardio sessions are strategically integrated 
-                to enhance fat burning. -->
-            <!-- <li>Coach's Guidance and Support</li> -->
-            <!-- The coach, Meechie, provides guidance, answers questions, and offers support throughout the journey.
-                Participants are encouraged to embrace the process, stay consistent, and celebrate small victories along the way. -->
-            <!-- <li>Focused Nutrition Guide</li> -->
-            <!-- The nutrition guide is tailored for fat loss while maintaining muscle mass.
-                It introduces the "Golden Pyramid of Fat Loss" concept, emphasizing a calorie deficit for effective fat loss.
-                Protein intake is highlighted as crucial for building and maintaining muscle during the fat loss process. -->
-            <!-- <li>Holistic Approach to Health</li> -->
-            <!-- The program emphasizes the importance of proper nutrition, warm-ups before workouts, and recommended rest between sets.
-                Participants are advised on various factors contributing to success, including progressively increasing weights, staying 
-                hydrated, managing liquid calorie intake, getting sufficient sleep, and incorporating creatine. -->
-        </ul>
+        <div id="mission-header">
+            <h1 class="mission-statement">
+                (Sample text)Why my personal training will work for you!</h1>
+            <ul id="whyme" class="whyme">
+                <li id="why" class="why">Eat better without dieting or feeling deprived.</li>
+                <li id="why" class="why">Get active, no matter what shape you're in now.</li>
+                <li id="why" class="why">Ditch the food rules, drop the fad diets and conflicting advice.</li>
+                <li id="why" class="why">Build fitness into your life, without it taking over.</li>
+                <li id="why" class="why">Achieve, and maintain, your goals, even when life gets busy.</li>
+            </ul>
+        </div>
+        <div id="fourpillars">
+            <div class="pillar">
+                <h1><i class="fa-brands fa-nutritionix"></i></h1>
+                <h1>Section 1</h1>
+            </div>
+            <div class="pillar">
+                <h1><i class="fa-solid fa-person-rays"></i></h1>
+                <h1>Section 2</h1>
+            </div>
+            <div class="pillar">
+                <h1><i class="fa-solid fa-dumbbell"></i></h1>
+                <h1>Section 3</h1>
+            </div>
+            <div class="pillar">
+                <h1><i class="fa-solid fa-brain"></i></h1>
+                <h1>Section 4</h1>
+            </div>
+        </div>
     </section>
 
     <section class="cta">

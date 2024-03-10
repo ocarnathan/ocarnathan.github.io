@@ -67,6 +67,7 @@ header {
     width: 100%; /* Full width */
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
     font-size: 20px;
+    z-index: 2;
   }
 
 video {
