@@ -4,8 +4,6 @@
  
 /* setting default font for entire page */
 * {
-  margin: 0;
-  padding: 0;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700; /* Bold */
   box-sizing: border-box;
@@ -23,7 +21,7 @@ body {
   min-height: 100vh;
 }
 
-#main-navbar {
+#navbar {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -65,8 +63,6 @@ nav ul li a {
 
 nav ul li a:hover {
   color:#ff0000;
-  transform: scale(1.5);
-
 }
 
 nav ul li a::after {
@@ -100,22 +96,17 @@ nav ul li a:hover::after {
 
 .video-container {
   width: 100%;
-  height: 100vh;
-  min-height: 100vh;
+  height: 100%;
   object-fit: cover;
   /* position: absolute; */
   top: 0;
   left: 0;
   z-index: -1;
-  background: #ff0000;
 }
 
 .video-container video {
-  width: 100vw;
+  width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
-  object-fit: cover;
 }
 
 .text-box {
@@ -138,12 +129,12 @@ nav ul li a:hover::after {
 .text-box h1 {
   text-transform: uppercase;
   /* font-size: 100px; */
-  font-size: 6vw;
+  font-size: 650%;
 }
 
 .text-box .button-row button {
   /* text-transform: uppercase; */
-  font-size: 2.9vw;
+  font-size: 50px;
   margin: 0 20px 0 20px;
   background-color: #ff0000;
 }
@@ -217,92 +208,6 @@ span {
 
 
 /* -----------------------------features----------------------- */
-#features {
-  height: 100vh;
-}
-
-.pillar i {
-  padding: 30px;
-  font-size: 600%;
-}
-/* #whyme {
-  justify-content: center;
-} */
-
-#mission-header {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 15%;
-  background: #000000;
-  border: 1px solid #aa3636;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
-}
-
-.mission-statement {
-  font-size: 150px;
-}
-
-.pillar {
-  width: 50%;
-  height: 50%;
-  box-sizing: border-box;
-  border: 1px solid #aa3636;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  overflow: hidden;
-  max-height: 50vh;
-}
-
-.pillar h1 {
-  font-size: 90%; /* 3% of the viewport width */
-}
-
-.pillar p {
-  font-size: 90%; /* 2% of the viewport width */
-  max-width: 80%; /* Maximum width as a percentage of the container */
-}
-
-/* .pillar i {
-  font-size: 400%;
-} */
-
-#fourpillars {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 85%;
-  background-color: #2c6a89; /* Adjust the background color as needed */
-  display: flex;
-  flex-wrap: wrap;
-}
-
-
-/* Additional styles to fill each quadrant */
-.pillar:nth-child(1) {
-  background-color: #000000; /* Adjust the background color as needed */
-}
-
-.pillar:nth-child(2) {
-  background-color: #000000; /* Adjust the background color as needed */
-}
-
-.pillar:nth-child(3) {
-  background-color: #000000; /* Adjust the background color as needed */
-}
-
-.pillar:nth-child(4) {
-  background-color: #000000; /* Adjust the background color as needed */
-}
-
-
 .features, .cta, .foot {
   color: #fff;
   background: rgb(0, 0, 0);
@@ -324,54 +229,6 @@ span {
 
 
 
-/* dont display menu toggles */
-#main-navbar .fa-solid {
-  display: none;
-}
-
-/* ---------------css for small screens---------- */
-@media only screen and (max-width: 600px) {
-
-  #main-navbar .fa-solid {
-    display: block;
-    font-size: 25px;
-  }
-
-  #socials {
-    display: none;
-  }
-
-  #main-navbar ul {
-    background: #ff0000;
-    position: fixed;
-    top: 0;
-    right: -200px;
-    width: 200px;
-    height: 100vh;
-    padding-top: 50px;
-    z-index: 2;
-    transition: right 0.5s;
-  }
-
-  #main-navbar ul li {
-    display: block;
-    margin: 25px;
-  }
-
-  #main-navbar ul .fa-solid {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    cursor: pointer;
-  }
-
-  #main-navbar {
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  
-}
 
 
 

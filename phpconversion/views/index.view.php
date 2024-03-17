@@ -71,31 +71,26 @@
         <!-- <p>hey</p> -->
         <div id="mission-header">
             <h1 class="mission-statement">
-                (Sample text)Why my personal training will work for you!</h1>
-            <ul id="whyme" class="whyme">
-                <li id="why" class="why">Eat better without dieting or feeling deprived.</li>
-                <li id="why" class="why">Get active, no matter what shape you're in now.</li>
-                <li id="why" class="why">Ditch the food rules, drop the fad diets and conflicting advice.</li>
-                <li id="why" class="why">Build fitness into your life, without it taking over.</li>
-                <li id="why" class="why">Achieve, and maintain, your goals, even when life gets busy.</li>
-            </ul>
+                4 Pillars to a New You</h1>
         </div>
         <div id="fourpillars">
             <div class="pillar">
-                <h1><i class="fa-brands fa-nutritionix"></i></h1>
-                <h1>Section 1</h1>
+                <i class="fa-solid fa-dumbbell"></i>
+                <h1>Efficient Workouts</h1>
             </div>
             <div class="pillar">
-                <h1><i class="fa-solid fa-person-rays"></i></h1>
-                <h1>Section 2</h1>
+                <i class="fa-brands fa-nutritionix"></i>
+                <h1>Mindful Nutrition</h1>
+
             </div>
             <div class="pillar">
-                <h1><i class="fa-solid fa-dumbbell"></i></h1>
-                <h1>Section 3</h1>
+                <i class="fa-solid fa-person-rays"></i>
+                <h1>Sustainability</h1>
+
             </div>
             <div class="pillar">
-                <h1><i class="fa-solid fa-brain"></i></h1>
-                <h1>Section 4</h1>
+                <i class="fa-solid fa-brain"></i>
+                <h1>Developing Healthy Habits</h1>
             </div>
         </div>
     </section>
