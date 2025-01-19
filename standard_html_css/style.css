@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+/* -----------------------------Header----------------------- */
+ 
+/* setting default font for entire page */
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700; /* Bold */
+  box-sizing: border-box;
+  
+}
+
+span {
+  color: #ff0000;
+}
+
+body {
+  margin: 0;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* padding: 15px 0; */
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  font-size: 20px;
+  z-index: 2;
+}
+
+header {
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1; /* Set a higher z-index to make it overlay the video */
+  transition: top 0.5s;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-flex;
+  margin: 0px 10px;
+  justify-content: space-around;
+}
+
+nav ul li a {
+  color:#fff;
+  margin: 10px 0px;
+  /* padding: 0 -5px; */
+  text-decoration: none;
+  position: relative;
+}
+
+nav ul li a:hover {
+  color:#ff0000;
+}
+
+nav ul li a::after {
+  content: '';
+  /* add content */
+  width: 0;
+  /* width of line */
+  height: 3px;
+  /* height of line */
+  background: #ff0000;
+  /* color of line */
+  position: absolute;
+  /* position line */
+  left: 0;
+  /* position line */
+  bottom: -6px;
+  /* position line */
+  transition: 0.5s;
+  /* transition for animation */
+}
+
+nav ul li a:hover::after {
+  /* when hover over link */
+  width: 100%;
+  /* width of line */
+}
+
+#main-section {
+  position: relative;
+}
+
+.video-container {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+}
+
+.text-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(11, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100%;
+  font-weight: 900;
+  /* mix-blend-mode: multiply; */
+  flex-direction: column;
+}
+
+.text-box h1 {
+  text-transform: uppercase;
+  /* font-size: 100px; */
+  font-size: 650%;
+}
+
+.text-box .button-row button {
+  /* text-transform: uppercase; */
+  font-size: 50px;
+  margin: 0 20px 0 20px;
+  background-color: #ff0000;
+}
+
+.text-box .button-row button a {
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  color: inherit;
+}
+
+/* -----------------------------about----------------------- */
+#about-section {
+  background: rgb(0, 0, 0);
+  /* display: flex;
+  width: 100vw; */
+}
+
+.about-container {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* flex-wrap: wrap; */
+  /* width: 100vw; */
+}
+
+
+span {
+  color: #ff0000;
+}
+
+.about-col-1 {
+  color:#fff;
+  max-width: 50%;
+  flex-basis: 65%;
+  /* background: #ff0000; */
+  font-size: 150%;
+  font-weight: 700;
+}
+
+.about-col-1 h1 {
+  padding-bottom: 50px;
+  font-size: 200%;
+}
+
+.about-col-1 p {
+ max-width: 90%;
+}
+
+.about-col-2 {
+  max-width: 50%;
+  flex-basis: 35%;
+}
+
+.about-col-2 img {
+  border-radius: 25px;
+  max-width: 100%;
+}
+/* -----------------------------Youtube----------------------- */
+#youtube-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: black; /* Set your background color */
+    color: red; /* Set your text color */
+    padding: 20px;
+}
+
+
+/* -----------------------------features----------------------- */
+.features, .cta, .foot {
+  color: #fff;
+  background: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.foot p {
+  margin: 0;
+}
+
+.features ul {
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+/* -------------------REFERENCES-------------------- */
+/* Center Text over video */
+/* https://www.youtube.com/watch?v=ytnOT-gg5Lw */
+
+/* Bootstrap docs */
+/* https://getbootstrap.com/docs/5.0/getting-started/download/ */
+
+/* Bootstrap course */
+/* https://www.youtube.com/watch?v=O_9u1P5YjVc */
