@@ -61,7 +61,7 @@
                 </p>
             </div>
             <div class="about-col-2">
-                <img src="images/IMG_0869.JPG" alt="meechie" width="600">
+                <img src="images/IMG_0869.JPG" alt="meechie" width="800">
             </div>
         </div>
     </section>
@@ -69,28 +69,30 @@
     <!-- ----------------------- features ------------------------- -->
     <section id="features" class="features">
         <!-- <p>hey</p> -->
-        <div id="mission-header">
-            <h1 class="mission-statement">
-                4 Pillars to a New You</h1>
-        </div>
-        <div id="fourpillars">
-            <div class="pillar">
-                <i class="fa-solid fa-dumbbell"></i>
-                <h1>Efficient Workouts</h1>
+        <div class="features-container">
+            <div id="mission-header">
+                <h1 class="mission-statement">
+                    4 Pillars to a New You</h1>
             </div>
-            <div class="pillar">
-                <i class="fa-brands fa-nutritionix"></i>
-                <h1>Mindful Nutrition</h1>
+            <div id="fourpillars">
+                <div class="pillar">
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <h1>Efficient Workouts</h1>
+                </div>
+                <div class="pillar">
+                    <i class="fa-brands fa-nutritionix"></i>
+                    <h1>Mindful Nutrition</h1>
 
-            </div>
-            <div class="pillar">
-                <i class="fa-solid fa-person-rays"></i>
-                <h1>Sustainability</h1>
+                </div>
+                <div class="pillar">
+                    <i class="fa-solid fa-person-rays"></i>
+                    <h1>Sustainability</h1>
 
-            </div>
-            <div class="pillar">
-                <i class="fa-solid fa-brain"></i>
-                <h1>Developing Healthy Habits</h1>
+                </div>
+                <div class="pillar">
+                    <i class="fa-solid fa-brain"></i>
+                    <h1>Developing Healthy Habits</h1>
+                </div>
             </div>
         </div>
     </section>
