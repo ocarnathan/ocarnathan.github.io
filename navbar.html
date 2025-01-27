@@ -1,38 +1,71 @@
 
 <!-- header contains the navbar and it's components. -->
-<header id="navbar-container">
-        <nav id="navbar">
-                <h4><span>M</span>T<span>M</span> Coaching</h4>
-                <ul id="menu" class="menu">
-                        <li><a
-                                        href="index.html">Home</a></li>
-                        <li><a
-                                        href="program.html">Program</a></li>
-                        <li><a
-                                        href="coaching.html">Coaching</a></li>
-                        <li><a
-                                        href="#about-section">About</a></li>
-                </ul>
-                <ul id="socials" name="socials">
-                        <li><a
-                                        href="https://www.facebook.com/demetrius.pearson1"
-                                        target="_blank"><i
-                                                class="fa-brands fa-facebook"></i></a></li>
-                        <li><a
-                                        href="https://www.instagram.com/meechie_taught_me/"
-                                        target="_blank"><i
-                                                class="fa-brands fa-instagram"></i></a></li>
-                        <li><a
-                                        href="https://www.youtube.com/@TheCounterAttack_"
-                                        target="_blank"><i
-                                                class="fa-brands fa-youtube"></i></a></li>
-                        <li><a
-                                        href="https://discord.gg/ANfMA8zTk6"
-                                        target="_blank"><i
-                                                class="fa-brands fa-discord"></i></a></li>
-                        <li id="cart" name="cart"><a
-                                        href="#CART"><i
-                                                class="fa-solid fa-cart-shopping"></i></a></li>
-                </ul>
-        </nav>
-</header>
+<nav id="navbar">
+        <h4><span>M</span>T<span>M</span> Coaching</h4>
+        <ul id="sidemenu">
+                <li><a
+                                href="index.html">Home</a></li>
+                <li><a
+                                href="program.html">Program</a></li>
+                <li><a
+                                href="coaching.html">Coaching</a></li>
+                <li><a
+                                href="#about-section">About</a></li>
+                <i class="fas fa-times"
+                        onclick="closemenu()"></i>
+        </ul>
+        <ul id="sidemenu2">
+                <li><a
+                                href="https://www.facebook.com/demetrius.pearson1"
+                                target="_blank"><i
+                                        class="fa-brands fa-facebook"></i></a></li>
+                <li><a
+                                href="https://www.instagram.com/meechie_taught_me/"
+                                target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></a></li>
+                <li><a
+                                href="https://www.youtube.com/@TheCounterAttack_"
+                                target="_blank"><i
+                                        class="fa-brands fa-youtube"></i></a></li>
+                <li><a
+                                href="https://discord.gg/ANfMA8zTk6"
+                                target="_blank"><i
+                                        class="fa-brands fa-discord"></i></a></li>
+                <li id="cart" name="cart"><a
+                                href="#CART"><i
+                                        class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+        <i id="hamburgermenu" class="fas fa-bars" onclick="openmenu()"></i>
+</nav>
+
+<script>
+        var sidemenu = document.getElementById("sidemenu");
+        var sidemenu2 = document.getElementById("sidemenu2");
+        var hamburger = document.getElementById("hamburgermenu");
+
+        function openmenu() {
+
+                // Move all children of sidemenu2 to sidemenu
+                while (sidemenu2.firstChild) {
+                sidemenu.appendChild(sidemenu2.firstChild);
+                }
+
+                sidemenu.style.right = "0";
+                hamburger.style.display = "none";
+        }
+
+        function closemenu() {
+
+                // Move all children of sidemenu back to sidemenu2
+                const extraItems = [...sidemenu.querySelectorAll("li")].filter((item) =>
+                        item.parentNode.id === "sidemenu"
+                );
+
+                extraItems.forEach((item) => {
+                        sidemenu2.appendChild(item);
+                });
+
+            sidemenu.style.right = "-200px";
+            hamburgermenu.style.display = "block";
+        }
+</script>

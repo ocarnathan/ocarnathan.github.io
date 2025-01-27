@@ -19,14 +19,14 @@ body {
   background: rgb(0, 0, 0);
 }
 
-@media (min-wdith: 768px) {
+@media (min-width: 768px) {
   /* Tablet and above */
   body {
     font-size: 1.125rem; /* 18px */;
   }
 }
 
-@media (min-wdith: 1024px) {
+@media (min-width: 1024px) {
   /* Desktop and above */
   body {
     font-size: 1.25rem; /* 20px */
@@ -182,8 +182,6 @@ nav ul li a:hover::after {
   }
 }
 
-
-
 /* Navigation styles */
 nav {
   display: flex;
@@ -198,27 +196,53 @@ nav {
   z-index: 1000;
 }
 
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 1rem;
-}
+
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
 }
 
+nav .fas{
+  display: none;
+}
+
 @media (max-width: 768px) {
+  nav {
+    background: rgba(0, 0, 0, 0); /* Semi-transparent background */
+  }
   nav ul {
-    flex-direction: column; /* Stack items vertically */
-    display: none; /* Hidden by default */
+    background: #f00101; /* Semi-transparent background */
+    position: fixed; /* Make it stick/fixed */
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 1000;
+    transition: right 0.5s;
   }
 
-  nav ul.show {
-    display: flex; /* Show menu when toggled */
+  nav ul li{
+    display: block;
+    margin: 25px;
   }
+
+  nav ul .fas{
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  nav .fas{
+    display: block;
+    font-size: 25px;
+  }
+  
 }
+
 
 /* Typography */
 h1 {
