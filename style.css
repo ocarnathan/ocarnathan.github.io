@@ -7,22 +7,16 @@
   box-sizing: border-box;
 }
 
-/* Root font size for easier scaling */
-html {
-  font-size: 16px; /* Default font size (1rem = 16px */
-}
-
-/* Body styles */
+/* Body styles - impacts entire page because everything is encapsulated inside the body element*/
 body {
   font-family: 'Roboto Condensed', sans-serif;
   line-height: 1.6;
-  color: #333;
-  background-color: #f9f9f9;
+  background-color: #0b0b0b;
+  font-size: 1rem; /* 16px*/
 }
 
-body {
-  font-size: 1rem; /* 16px*/
-  /* padding: 10px; */
+.full-page{
+  background: rgb(0, 0, 0);
 }
 
 @media (min-wdith: 768px) {
@@ -91,7 +85,7 @@ nav ul li a:hover::after {
   /* width of line */
 }
 
-.video-container {
+#video-container {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -100,16 +94,15 @@ nav ul li a:hover::after {
   left: 0;
 }
 
-.video-container video {
+#video-container video {
   width: 100%;
   height: 100%;
 }
 
-.text-box {
+#text-box {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(11, 0, 0, 0.3);
   height: 100%;
   width: 100%;
   color: #fff;
@@ -122,13 +115,12 @@ nav ul li a:hover::after {
   flex-direction: column;
 }
 
-section {
-  background: rgb(0, 0, 0);
-  /* display: flex;
-  width: 100vw; */
+#text-box h1 {
+  font-size: 5vw;
 }
+
 /* Flex container */
-.container {
+#container {
   display: flex;
   flex-wrap: wrap; /* Allow wrapping for smaller screens */
   justify-content: space-between;
@@ -137,43 +129,41 @@ section {
 }
 
 /* Child items */
-.container > div {
+#container > div {
   flex: 1 1 calc(100% - 2rem); /* Full width by default */
 }
 
-.col-1 {
+#col-1 {
   color:#fff;
   max-width: 50%;
   flex-basis: 65%;
-  /* background: #ff0000; */
   font-size: 150%;
   font-weight: 700;
   max-width: 100%;
 }
 
-.col-1 h1 {
+#col-1 h1 {
   padding-bottom: 50px;
   font-size: 200%;
 }
 
-.col-1 p {
+#col-1 p {
   max-width: 90%;
  }
  
- .col-2 {
+ #col-2 {
    max-width: 50%;
    flex-basis: 35%;
    max-width: 100%;
  }
  
- .col-2 img {
+ #col-2 img {
    border-radius: 25px;
    max-width: 100%;
  }
 
- .features, .cta, .foot {
+ #features, #cta, #foot {
   color: #fff;
-  background: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -181,13 +171,13 @@ section {
 }
 
 @media (min-width: 768px) {
-  .container > div {
+  #container > div {
     flex: 1 1 calc(50% - 2rem); /* Two columns on tablets */
   }
 }
 
 @media (min-width: 1024px) {
-  .container > div {
+  #container > div {
     flex: 1 1 calc(33.33% - 2rem); /* Three columns on desktops */
   }
 }
@@ -199,14 +189,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  background: #333;
   color: #fff;
   top: 0; /* Stay on top */
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
   background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
   position: fixed; /* Make it stick/fixed */
   width: 100%; /* Full width */
+  z-index: 1000;
 }
 
 nav ul {
@@ -265,22 +254,22 @@ iframe {
   max-width: 100%; /* Scale down to fit container */
 }
 
-.youtube-text h3 {
+#youtube-text h3 {
   margin: 0; /* Remove default margin */
   text-align: center;
   color: #f9f9f9;
 }
 
-.cta p {
+#cta p {
   text-align: center;
 }
 
-.mission-statement {
+#mission-statement {
   text-align: center;
 }
 
 /* Utility classes */
-.text-center {
+#text-center {
   text-align: center;
 }
 
@@ -290,7 +279,7 @@ iframe {
 .pb-1 { padding-bottom: 1rem; }
 
 /* Button hover effect */
-button {
+#button-row button {
   background: #ff0000;
   color: #fff;
   border: none;
@@ -299,8 +288,8 @@ button {
   transition: background 0.3s ease;
 }
 
-button:hover {
-  background: #cc0000;
+#button-row button:hover {
+  background: #b9b3b3;
 }
 
 
