@@ -66,6 +66,10 @@ https://docs.google.com/forms/d/e/1FAIpQLSecfseJgZjQ-y3j8OuAW3Uc-oOiJMBjyyLuOYFL
                 <div id="col-1">
                     <h1 id="sub-title">Who is
                         <span>M</span>eechie?</h1>
+                    <!-- <iframe
+                        src="https://docs.google.com/document/d/1dxjEG2bE5Ng5Wy-z7g4efOoiyN19V6zcjuWyXjK4iAw/edit?tab=t.0"
+                        width="100%" height="600px"></iframe> -->
+
                     <p id="bio">Meet Coach Meechie, also known
                         as
                         Demetrius Pearson, your dedicated fitness guru
@@ -164,29 +168,26 @@ https://docs.google.com/forms/d/e/1FAIpQLSecfseJgZjQ-y3j8OuAW3Uc-oOiJMBjyyLuOYFL
             window.onscroll = function() {
                 //get the current scroll position
                 var currentScrollPos = window.pageYOffset;
-                //check if the current position is less than the previous scroll position
-                if (prevScrollpos > currentScrollPos) {
-                    //If scrolling up, set the 'top' style of the navbar to 0 (fully visible)
-                    document.getElementById("navbar").style.top = "0";
+
+                if (currentScrollPos > 0) {
+                    //check if the current position is less than the previous scroll position
+                    if (prevScrollpos > currentScrollPos) {
+                        //If scrolling up, set the 'top' style of the navbar to 0 (fully visible)
+                        document.getElementById("navbar").style.top = "0";
+                    } else {
+                        //If scrolling down, set the 'top' style of the navbar to "-50px" (hide it by moving it off-screen)
+                        document.getElementById("navbar").style.top = "-60px";
+                    }
+
                 } else {
-                    //If scrolling down, set the 'top' style of the navbar to "-50px" (hide it by moving it off-screen)
-                    document.getElementById("navbar").style.top = "-60px";
+                    document.getElementById("navbar").style.top = "0";
                 }
+
                 //update the previous scroll position to the current scroll position for the next scroll event
                 prevScrollpos = currentScrollPos;
             }
         </script>
-        <script>
-            var sidemenu = document.getElementById("sidemenu");
 
-            function openmenu() {
-                sidemenu.style.right = "0";
-            }
-
-            function closemenu() {
-                sidemenu.style.right = "-200px";
-            }
-        </script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
