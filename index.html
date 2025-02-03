@@ -164,6 +164,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSecfseJgZjQ-y3j8OuAW3Uc-oOiJMBjyyLuOYFL
         <script>
             //stores the previous scroll position when the page is loaded.
             var prevScrollpos = window.pageYOffset;
+            
             //set up a function to run when the page is scrolled
             window.onscroll = function() {
                 //get the current scroll position
@@ -186,6 +187,36 @@ https://docs.google.com/forms/d/e/1FAIpQLSecfseJgZjQ-y3j8OuAW3Uc-oOiJMBjyyLuOYFL
                 //update the previous scroll position to the current scroll position for the next scroll event
                 prevScrollpos = currentScrollPos;
             }
+
+
+            // function updateButtonText() {
+            //     let buttons = document.querySelectorAll("#button-row button"); // Target all buttosn
+                
+            //     if (window.matchMedia("(max-width: 768px)").matches) {
+            //       buttons[0].innerHTML = `<a href="#features"><i class="fa-brands fa-rocketchat"></i></a>`; // Shortened text for mobile
+            //       buttons[1].innerHTML = `<a
+            //                     href="https://docs.google.com/forms/d/e/1FAIpQLSecfseJgZjQ-y3j8OuAW3Uc-oOiJMBjyyLuOYFLSfzDs71SZg/viewform"
+            //                     target="_blank"><i class="fa-solid fa-book"></i></a>`; // Shortened text for mobile
+            //     } else {
+            //       buttons[0].innerHTML = `<a href="#features">Schedule a free consultation</a>`; // Default text for larger screens
+            //       buttons[1].innerHTML = `<a
+            //                     href="https://docs.google.com/forms/d/e/1FAIpQLSecfseJgZjQ-y3j8OuAW3Uc-oOiJMBjyyLuOYFLSfzDs71SZg/viewform"
+            //                     target="_blank">Get Your Free Ebook</a>`; // Default text for larger screens
+            //  }
+
+            //    // Run when the page loads
+            // document.addEventListener("DOMContentLoaded", updateButtonText);
+
+            // // Run when the screen is resized
+            // window.addEventListener("resize", updateButtonText);
+            // }
+
+  // Run when the page loads
+  document.addEventListener("DOMContentLoaded", updateButtonText);
+
+  // Run when the screen is resized
+  window.addEventListener("resize", updateButtonText);            
+
         </script>
 
         <script
