@@ -133,7 +133,8 @@ nav ul li a:hover::after {
 #container {
   display: flex;
   flex-wrap: wrap; /* Allow wrapping for smaller screens */
-  justify-content: space-between;
+  justify-content: center; /* Centers all child divs horizontally */
+  align-items: stretch; /* Centers all child divs vertically */
   gap: 1rem;
   padding: 1rem;
 }
@@ -144,34 +145,29 @@ nav ul li a:hover::after {
   color: #f9f9f9;
 }
 
-/* #col-1 {
-  color:#fff;
-  max-width: 50%;
-  flex-basis: 65%;
-  font-size: 150%;
-  font-weight: 700;
-  max-width: 100%;
+/* Style for each column */
+#col-1, #col-2 {
+  flex: 1 1 50%; /* Each div takes 50% of the width */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+  text-align: left; /* Ensures text inside is centered */
+}
+ 
+
+/* Move text to the top of #col-1 */
+#col-1 {
+  align-items: center; /* Keep horizontal centering */
+  justify-content: flex-start; /* Aligns content to the top */
+  padding-top: 1rem; /* Adds space from the top */
 }
 
-#col-1 h1 {
-  padding-bottom: 50px;
-  font-size: 200%;
+/* Make image responsive */
+#col-2 img {
+  max-width: 100%; /* Ensures image fits its parent */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 25px;
 }
-
-#col-1 p {
-  max-width: 90%;
- }
- 
- #col-2 {
-   max-width: 50%;
-   flex-basis: 35%;
-   max-width: 100%;
- }
- 
- #col-2 img {
-   border-radius: 25px;
-   max-width: 100%;
- } */
 
  #features, #cta, #foot {
   color: #fff;
@@ -184,12 +180,6 @@ nav ul li a:hover::after {
 @media (min-width: 768px) {
   #container > div {
     flex: 1 1 calc(50% - 2rem); /* Two columns on tablets */
-  }
-}
-
-@media (min-width: 1024px) {
-  #container > div {
-    flex: 1 1 calc(33.33% - 2rem); /* Three columns on desktops */
   }
 }
 
@@ -273,6 +263,15 @@ nav .fas{
     font-size: 7vw;
   }
   
+  #col-2 img {
+    max-width: 60%; /* Reduce size more aggressively */
+  }
+
+  #bio {
+    font-size: 1.2rem !important; /* Similar to h6 */
+    font-weight: normal !important; /* Reduce boldness for better readability */
+    line-height: 1.4 !important; /* Adjust line height for better spacing */
+  }
 
 }
 
@@ -286,6 +285,15 @@ nav .fas{
 
   #text-box h1 {
     font-size: 8vw;
+  }
+
+  #col-2 img {
+    max-width: 50%; /* Make it smaller on very small screens */
+  }
+
+    #bio {
+    font-size: 1rem !important; /* Slightly smaller */
+    line-height: 1.3 !important;
   }
 }
 
@@ -392,6 +400,14 @@ iframe {
   #button-row button {
     font-size: 2.5vw;
     padding: 1vw 2vw;
+  }
+
+  #col-2 img {
+    max-width: 70%; /* Shrink faster on medium screens */
+  }
+
+  #bio {
+    font-size: 1.5rem;
   }
 }
 
